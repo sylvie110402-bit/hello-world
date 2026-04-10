@@ -1,45 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
+    <title>SYLVIE'S STUDIO</title>
     <style>
+        /* --- 1. 整体氛围设置 --- */
         body { 
-    /* 背景用那种淡淡的灰白，比纯白更高级 */
-    background-color: #fafafa; 
-    color: #1a1a1a;
-    /* 1-2种无衬线字体，Inter 是极简风首选 */
-    font-family: 'Inter', -apple-system, sans-serif; 
-    line-height: 1.8; /* 行高调大，留足呼吸感 */
-    margin: 0;
-    padding: 0;
-}
+            background-color: #fafafa; /* 高级灰白 */
+            color: #1a1a1a;
+            font-family: 'Inter', -apple-system, sans-serif; 
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+        }
 
-.container {
-    max-width: 900px; /* 限制宽度，不要铺满全屏 */
-    margin: 100px auto; /* 上下留白 */
-    padding: 0 40px;
-}
+        /* --- 2. 容器：给网页留出呼吸感 --- */
+        .container {
+            max-width: 800px;
+            margin: 100px auto; /* 上下留白100px，左右居中 */
+            padding: 0 40px;
+        }
 
-h1 { 
-    font-weight: 300; /* 字重调轻，显得冷淡 */
-    letter-spacing: 4px; /* 字符间距拉开 */
-    text-transform: uppercase; /* 全大写 */
-    border-bottom: 1px solid #eee; /* 极细的分隔线 */
-    padding-bottom: 20px;
-}
+        /* --- 3. 标题：智感冷淡风的核心 --- */
+        h1 { 
+            font-weight: 300; 
+            letter-spacing: 4px; 
+            text-transform: uppercase; 
+            border-bottom: 1px solid #eee; 
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
 
-button { 
-    /* 只加悬停变色，不搞花哨特效 */
-    background: none;
-    border: 1px solid #1a1a1a;
-    padding: 12px 30px;
-    cursor: pointer;
-    transition: all 0.3s ease; /* 轻微阴影/变色过渡 */
-}
+        /* --- 4. 按钮样式 --- */
+        button { 
+            background: none;
+            border: 1px solid #1a1a1a;
+            padding: 12px 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
 
-button:hover {
-    background: #1a1a1a;
-    color: white;
-}
+        button:hover {
+            background: #1a1a1a;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SYLVIE'S STUDIO</h1>
+        
+        <p>设计、逻辑与艺术的交汇处。</p >
+        
+        <p style="color: #666; font-size: 14px;">
+            在这里，我记录关于珠串艺术、展会设计与数字化流程的每一次探索。
+        </p >
 
+        <button onclick="alert('即将开启深度探索')">进入作品集</button>
+    </div>
 </body>
 </html>
