@@ -1,3 +1,4 @@
+![Header](cover.jpg)
 # hello-world
 此仓库用于练习 GitHub 工作流程
 # 🌊 Sylvie 的 GitHub 实验室
