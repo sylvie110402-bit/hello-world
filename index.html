@@ -3,29 +3,43 @@
 <head>
     <style>
         body { 
-            background-color: #f4f7f6; /* 极简浅灰背景 */
-            font-family: 'Helvetica', sans-serif; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            justify-content: center; 
-            height: 100vh; 
-        }
-        h1 { color: #2c3e50; letter-spacing: 2px; }
-        button { 
-            padding: 10px 20px; 
-            background: #2c3e50; 
-            color: white; 
-            border: none; 
-            cursor: pointer; 
-            border-radius: 5px; 
-        }
-        button:hover { background: #34495e; } /* 鼠标悬停变色 */
-    </style>
-</head>
-<body>
-    <h1>SYLVIE'S STUDIO</h1>
-    <p>设计、逻辑与艺术的交汇处。</p >
-    <button onclick="alert('惊喜：你已经迈出了成为开发者的第一步！')">探索更多</button>
+    /* 背景用那种淡淡的灰白，比纯白更高级 */
+    background-color: #fafafa; 
+    color: #1a1a1a;
+    /* 1-2种无衬线字体，Inter 是极简风首选 */
+    font-family: 'Inter', -apple-system, sans-serif; 
+    line-height: 1.8; /* 行高调大，留足呼吸感 */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 900px; /* 限制宽度，不要铺满全屏 */
+    margin: 100px auto; /* 上下留白 */
+    padding: 0 40px;
+}
+
+h1 { 
+    font-weight: 300; /* 字重调轻，显得冷淡 */
+    letter-spacing: 4px; /* 字符间距拉开 */
+    text-transform: uppercase; /* 全大写 */
+    border-bottom: 1px solid #eee; /* 极细的分隔线 */
+    padding-bottom: 20px;
+}
+
+button { 
+    /* 只加悬停变色，不搞花哨特效 */
+    background: none;
+    border: 1px solid #1a1a1a;
+    padding: 12px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* 轻微阴影/变色过渡 */
+}
+
+button:hover {
+    background: #1a1a1a;
+    color: white;
+}
+
 </body>
 </html>
